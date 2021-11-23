@@ -1,6 +1,6 @@
 #variable "billing_account" {}
 
-#variable "name" {}
+variable "name" {}
 
 variable "display_name" {}
 
