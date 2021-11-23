@@ -10,13 +10,13 @@ output "folder_id" {
   value = var.folder_id
 }
 
-output "name" {
-  value = var.name
+output "environment_name" {
+  value = var.environment_name
 }
 
-output "project_id" {
-  value = var.project_id
-}
+#output "project_id" {
+#  value = var.project_id
+#}
 
 output "organization_id" {
   value = var.organization_id
