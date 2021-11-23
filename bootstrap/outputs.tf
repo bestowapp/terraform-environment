@@ -10,10 +10,6 @@ output "folder_id" {
   value = var.folder_id
 }
 
-output "environment_name" {
-  value = var.environment_name
-}
-
 output "environment_group_name" {
   value = var.environment_group_name
 }
