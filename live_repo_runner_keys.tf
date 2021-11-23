@@ -26,8 +26,8 @@ resource "github_actions_secret" "default_service_account_key" {
   secret_name     = "GCP_SA_KEY"
 }
 
-resource "github_actions_secret" "project_id" {
-  plaintext_value = var.project_id
-  repository      = github_repository.live_environment_group.name
-  secret_name     = "GCP_PROJECT_ID"
-}
+#resource "github_actions_secret" "project_id" {
+#  plaintext_value = var.project_id
+#  repository      = github_repository.live_environment_group.name
+#  secret_name     = "GCP_PROJECT_ID"
+#}
