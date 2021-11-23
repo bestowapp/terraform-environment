@@ -14,9 +14,9 @@ output "environment_name" {
   value = var.environment_name
 }
 
-#output "project_id" {
-#  value = var.project_id
-#}
+output "environment_group_name" {
+  value = var.environment_group_name
+}
 
 output "organization_id" {
   value = var.organization_id
