@@ -8,7 +8,7 @@ locals {
 #    "project_id" : var.project_id,
     "environment_name" : var.name,
     "environment_group_name": var.environment_group_name,
-    "folder_id" : google_folder.group_folder.folder_id
+    "folder_id" : google_folder.environment_folder.folder_id
   })
 }
 
