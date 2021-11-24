@@ -1,6 +1,6 @@
 resource "google_folder" "environment_folder" {
   display_name = var.display_name
-  parent       = var.group_folder_id
+  parent       = var.group_folder_name
 }
 
 resource "google_folder_iam_member" "default_service_account_environment_group_folder" {

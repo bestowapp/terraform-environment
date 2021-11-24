@@ -6,8 +6,8 @@ output "billing_account" {
   value = var.billing_account
 }
 
-output "folder_id" {
-  value = var.folder_id
+output "group_folder_name" {
+  value = var.group_folder_name
 }
 
 output "project_id" {
