@@ -9,9 +9,9 @@ module "project" {
   name              = local.project_name
   org_id            = var.organization_id
   billing_account   = var.billing_account
-  folder_id = ""
+  folder_id         = var.group_folder_id
   random_project_id = true
-  activate_apis = [
+  activate_apis     = [
     "cloudresourcemanager.googleapis.com",
     "serviceusage.googleapis.com",
     "logging.googleapis.com",
