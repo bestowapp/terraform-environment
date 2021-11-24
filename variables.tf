@@ -13,6 +13,7 @@ variable "service_account_email" {}
 variable "project_id" {}
 
 variable "group_folder_name" {}
+variable "group_folder_id" {}
 
 variable "name" {}
 
