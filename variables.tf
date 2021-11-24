@@ -12,6 +12,8 @@ variable "service_account_email" {}
 
 variable "project_id" {}
 
+variable "group_folder_id" {}
+
 variable "name" {}
 
 variable "environment_group_name" {}
