@@ -1,5 +1,4 @@
 variable "billing_account" {}
-variable "bucket_name" {}
 variable "group_folder_id" {}
 variable "group_name" {}
 #variable "environment_display_name" {}
@@ -8,6 +7,7 @@ variable "group_name" {}
 variable "organization_id" {}
 #variable "service_account_id" {}
 variable "service_account_email" {}
+variable "state_bucket_name" {}
 
 
 output "billing_account" {
