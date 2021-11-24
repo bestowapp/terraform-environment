@@ -10,6 +10,10 @@ output "group_folder_name" {
   value = var.group_folder_name
 }
 
+output "group_folder_id" {
+  value = var.group_folder_id
+}
+
 output "project_id" {
   value = var.project_id
 }
