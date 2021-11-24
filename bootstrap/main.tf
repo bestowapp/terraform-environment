@@ -46,7 +46,7 @@ output "service_account_email" {
 }
 
 output "state_bucket_name" {
-  value = var.bucket_name
+  value = var.state_bucket_name
 }
 
 
