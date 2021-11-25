@@ -4,8 +4,6 @@ variable "display_name" {}
 
 variable "organization_id" {}
 
-variable "state_bucket_name" {}
-
 variable "group_folder_name" {}
 variable "group_folder_id" {}
 
