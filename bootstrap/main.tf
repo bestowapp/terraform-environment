@@ -1,5 +1,6 @@
 variable "billing_account" {}
 variable "group_folder_id" {}
+variable "group_folder_name" {}
 variable "group_name" {}
 #variable "environment_display_name" {}
 #variable "environment_name" {}
@@ -16,6 +17,9 @@ output "billing_account" {
 
 output "group_folder_id" {
   value = var.group_folder_id
+}
+output "group_folder_name" {
+  value = var.group_folder_name
 }
 
 #output "project_id" {
