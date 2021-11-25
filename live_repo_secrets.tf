@@ -1,10 +1,10 @@
 locals {
   environment = tomap({
-    "bucket_name" : var.bucket_name,
+    "state_bucket_name" : module.project.budget_name,
     "organization_id" : var.organization_id,
     "billing_account" : var.billing_account,
-    "service_account_id" : var.service_account_id,
-    "service_account_email" : var.service_account_email,
+    "service_account_id" : module.project.service_account_id,
+    "service_account_email" : module.project.service_account_email,
 #    "project_id" : var.project_id,
     "environment_name" : var.name,
     "environment_group_name": var.group_name,
