@@ -7,7 +7,7 @@ locals {
     "service_account_email" : var.service_account_email,
 #    "project_id" : var.project_id,
     "environment_name" : var.name,
-    "environment_group_name": var.environment_group_name,
+    "environment_group_name": var.group_name,
     "environment_folder_id" : google_folder.environment_folder.folder_id,
   })
 }

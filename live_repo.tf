@@ -1,5 +1,5 @@
 locals {
-  live_repo_name = "live-${var.environment_group_name}-${var.name}"
+  live_repo_name = "live-${var.group_name}-${var.name}"
 }
 resource "github_repository" "live_environment_group" {
   name = local.live_repo_name

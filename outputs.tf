@@ -15,7 +15,7 @@ output "project_id" {
 }
 
 output "environment_group_name" {
-  value = var.environment_group_name
+  value = var.group_name
 }
 
 output "environment_name" {

@@ -1,5 +1,5 @@
 locals {
-  project_name = "${var.environment_group_name}-${var.name}"
+  project_name = "${var.group_name}-${var.name}"
 }
 
 module "project" {
