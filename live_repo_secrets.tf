@@ -18,6 +18,7 @@ resource "github_actions_secret" "environment" {
   for_each        = local.environment
   secret_name     = each.key
   plaintext_value = each.value
+  depends_on = [google_folder.environment_folder]
 }
 
 
