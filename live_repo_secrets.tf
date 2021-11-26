@@ -1,6 +1,6 @@
 locals {
   environment = tomap({
-    "state_bucket_name" : module.project.budget_name,
+    "state_bucket_name" : google_storage_bucket.state.name,
     "organization_id" : var.organization_id,
     "billing_account" : var.billing_account,
     "service_account_id" : module.project.service_account_id,
