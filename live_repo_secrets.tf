@@ -13,11 +13,11 @@ locals {
   })
 }
 
-#resource "github_actions_secret" "environment" {
-#  repository      = github_repository.live_environment.name
-#  for_each        = local.environment
-#  secret_name     = each.key
-#  plaintext_value = each.value
-#}
+resource "github_actions_secret" "environment" {
+  repository      = github_repository.live_environment.name
+  for_each        = local.environment
+  secret_name     = each.key
+  plaintext_value = each.value
+}
 
 
