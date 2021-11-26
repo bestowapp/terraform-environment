@@ -8,8 +8,8 @@ locals {
 #    "project_id" : var.project_id,
     "environment_name" : var.name,
     "environment_group_name": var.group_name,
-    "environment_folder_id" : google_folder.environment_folder.folder_id,
-    "environment_folder_name" : google_folder.environment_folder.name,
+#    "environment_folder_id" : google_folder.environment_folder.folder_id,
+#    "environment_folder_name" : google_folder.environment_folder.name,
   })
 }
 
