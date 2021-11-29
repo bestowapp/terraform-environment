@@ -1,15 +1,15 @@
 locals {
   environment = tomap({
-    "state_bucket_name" : google_storage_bucket.state.name,
-    "organization_id" : var.organization_id,
     "billing_account" : var.billing_account,
-    "service_account_id" : module.project.service_account_id,
-    "service_account_email" : module.project.service_account_email,
-#    "project_id" : var.project_id,
-    "environment_name" : var.name,
-    "environment_group_name": var.group_name,
+    "domain_name" : var.domain_name,
     "environment_folder_id" : google_folder.environment_folder.folder_id,
     "environment_folder_name" : google_folder.environment_folder.name,
+    "environment_group_name": var.group_name,
+    "environment_name" : var.name,
+    "organization_id" : var.organization_id,
+    "service_account_email" : module.project.service_account_email,
+    "service_account_id" : module.project.service_account_id,
+    "state_bucket_name" : google_storage_bucket.state.name,
   })
 }
 
