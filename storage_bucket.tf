@@ -1,4 +1,4 @@
-resource "random_string" "project_id_suffix" {
+resource "random_string" "state_bucket_name_suffix" {
   length  = 5
   special = false
   lower   = true
@@ -6,18 +6,23 @@ resource "random_string" "project_id_suffix" {
   number  = false
 }
 
+#locals {
+#  environment_full_name = "${var.group_name}-${var.name}"
+#}
+
 resource "google_storage_bucket" "state" {
-  name                        = "${module.project.project_id}-state"
+  name                        = "${var.name}-state-${random_string.state_bucket_name_suffix.result}"
   location                    = "US"
   force_destroy               = true
   uniform_bucket_level_access = false
-  project                     = module.project.project_id
+  project                     = var.group_project_id
   versioning {
     enabled = true
   }
 }
+
 resource "google_storage_bucket_iam_member" "member" {
   bucket = google_storage_bucket.state.name
   role   = "roles/storage.admin"
-  member = "serviceAccount:${module.project.service_account_email}"
+  member = "serviceAccount:${google_service_account.environment_service_account.email}"
 }

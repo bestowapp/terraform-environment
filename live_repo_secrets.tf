@@ -7,8 +7,8 @@ locals {
     "environment_group_name": var.group_name,
     "environment_name" : var.name,
     "organization_id" : var.organization_id,
-    "service_account_email" : module.project.service_account_email,
-    "service_account_id" : module.project.service_account_id,
+    "service_account_email" : google_service_account.environment_service_account.email,
+    "service_account_id" : google_service_account.environment_service_account.account_id,
     "state_bucket_name" : google_storage_bucket.state.name,
   })
 }
